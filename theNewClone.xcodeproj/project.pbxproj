@@ -14,6 +14,9 @@
 		B1682B752A9CB9F900A6D14F /* theNewCloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1682B742A9CB9F900A6D14F /* theNewCloneTests.swift */; };
 		B1682B7F2A9CB9F900A6D14F /* theNewCloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1682B7E2A9CB9F900A6D14F /* theNewCloneUITests.swift */; };
 		B1682B812A9CB9F900A6D14F /* theNewCloneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1682B802A9CB9F900A6D14F /* theNewCloneUITestsLaunchTests.swift */; };
+		B1682B982A9CBF3600A6D14F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1682B972A9CBF3600A6D14F /* LoginView.swift */; };
+		B1682B9A2A9CC92600A6D14F /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1682B992A9CC92600A6D14F /* RegistrationView.swift */; };
+		B1682B9D2A9CCD3800A6D14F /* ThreadTextfieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1682B9C2A9CCD3800A6D14F /* ThreadTextfieldModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		B1682B7A2A9CB9F900A6D14F /* theNewCloneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = theNewCloneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1682B7E2A9CB9F900A6D14F /* theNewCloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = theNewCloneUITests.swift; sourceTree = "<group>"; };
 		B1682B802A9CB9F900A6D14F /* theNewCloneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = theNewCloneUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B1682B972A9CBF3600A6D14F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		B1682B992A9CC92600A6D14F /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		B1682B9C2A9CCD3800A6D14F /* ThreadTextfieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadTextfieldModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +100,12 @@
 		B1682B622A9CB9F800A6D14F /* theNewClone */ = {
 			isa = PBXGroup;
 			children = (
-				B1682B632A9CB9F800A6D14F /* theNewCloneApp.swift */,
-				B1682B652A9CB9F800A6D14F /* ContentView.swift */,
+				B1682B922A9CBDF500A6D14F /* App */,
+				B1682B912A9CBDEE00A6D14F /* Core */,
+				B1682B902A9CBDE700A6D14F /* Extensions */,
+				B1682B8F2A9CBDE100A6D14F /* Model */,
+				B1682B8E2A9CBDCE00A6D14F /* Services */,
+				B1682B8D2A9CBDC800A6D14F /* Utills */,
 				B1682B672A9CB9F900A6D14F /* Assets.xcassets */,
 				B1682B692A9CB9F900A6D14F /* Preview Content */,
 			);
@@ -125,6 +135,85 @@
 				B1682B802A9CB9F900A6D14F /* theNewCloneUITestsLaunchTests.swift */,
 			);
 			path = theNewCloneUITests;
+			sourceTree = "<group>";
+		};
+		B1682B8D2A9CBDC800A6D14F /* Utills */ = {
+			isa = PBXGroup;
+			children = (
+				B1682B9B2A9CCCC900A6D14F /* ViewModifiers */,
+			);
+			path = Utills;
+			sourceTree = "<group>";
+		};
+		B1682B8E2A9CBDCE00A6D14F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B1682B8F2A9CBDE100A6D14F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B1682B902A9CBDE700A6D14F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B1682B912A9CBDEE00A6D14F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B1682B942A9CBEAA00A6D14F /* Authentication */,
+				B1682B932A9CBEA300A6D14F /* Root */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		B1682B922A9CBDF500A6D14F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B1682B632A9CB9F800A6D14F /* theNewCloneApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B1682B932A9CBEA300A6D14F /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				B1682B652A9CB9F800A6D14F /* ContentView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		B1682B942A9CBEAA00A6D14F /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				B1682B962A9CBF1000A6D14F /* Views */,
+			);
+			name = Authentication;
+			sourceTree = "<group>";
+		};
+		B1682B962A9CBF1000A6D14F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B1682B972A9CBF3600A6D14F /* LoginView.swift */,
+				B1682B992A9CC92600A6D14F /* RegistrationView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		B1682B9B2A9CCCC900A6D14F /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				B1682B9C2A9CCD3800A6D14F /* ThreadTextfieldModifier.swift */,
+			);
+			path = ViewModifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +346,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1682B9D2A9CCD3800A6D14F /* ThreadTextfieldModifier.swift in Sources */,
+				B1682B982A9CBF3600A6D14F /* LoginView.swift in Sources */,
 				B1682B662A9CB9F800A6D14F /* ContentView.swift in Sources */,
 				B1682B642A9CB9F800A6D14F /* theNewCloneApp.swift in Sources */,
+				B1682B9A2A9CC92600A6D14F /* RegistrationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
